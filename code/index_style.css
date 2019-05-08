@@ -1,0 +1,57 @@
+footer{
+  font-size: x-small;
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 10%;
+}
+
+body{
+  padding: 1em;
+}
+
+
+svg{
+  width:90%;
+  padding-left:0%;
+  padding-right: 0%;
+  padding-top: 0%;
+}
+
+.side-filter{
+  width:70%;
+  height:50%;
+  font-size:100%;
+  padding-top:5%;
+  padding-left:7%;
+
+}
+
+.filter_title{
+  font-weight: bold;
+}
+
+.title_hist{
+  padding-top: 3%;
+  padding-left:7%;
+}
+
+#vaContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column{
+    background-size: cover;
+    background-position: top center;
+    margin: auto; /*top right bottom left*/
+    width: 31%; height: 100%;
+    cursor:pointer;
+    padding-bottom: 1em;
+}
+
+ol{
+  display: inline-block;
+  text-align: left;
+}
