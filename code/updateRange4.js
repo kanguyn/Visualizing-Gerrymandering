@@ -1,6 +1,4 @@
 
-// kernel https://www.d3-graph-gallery.com/graph/density_double.html
-
 var col_to_filter;
 var first_load;
 
@@ -82,7 +80,7 @@ Range=function(_parentElement, _data, _filterData){
 
       } else {
 
-        if (path == "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/VA_data/plan_metrics_ATG17.csv"){
+        if (path == "https://kanguyn.github.io/Visualizing-Gerrymandering/data/VA_data/plan_metrics_ATG17.csv"){
             // create histograms for Part ii
             makeHist_egs2(data, "egs", "#egs2", "Efficiency Gap");
             makeHist_cuts2(data, "nb_cuts", "#cuts2" , "Number of Cuts");
@@ -583,12 +581,12 @@ var drag_min2 = d3.drag()
 function changeDataPath(){
     var selectionVal = d3.select('#chooseData').property('value');
     if (selectionVal == 0){
-        path = "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/VA_data/plan_metrics_ATG17.csv";
+        path = "https://kanguyn.github.io/Visualizing-Gerrymandering/data/VA_data/plan_metrics_ATG17.csv";
         HISTOGRAM_BUCKET_SIZE = 4;
         numBuckets = 200 / HISTOGRAM_BUCKET_SIZE;
         n_median_seats = 5;
     } else {
-        path = "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv";
+        path = "https://kanguyn.github.io/Visualizing-Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv";
         HISTOGRAM_BUCKET_SIZE = 5;
         numBuckets = Math.round( 200 / HISTOGRAM_BUCKET_SIZE);
         n_median_seats = 10;

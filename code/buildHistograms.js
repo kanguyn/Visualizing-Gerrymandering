@@ -30,7 +30,7 @@ function makeHist_egs(old_csvdata, col, var_svg_id, xlabel) {
     .range([height2, 0]);
 
     var newNumBuckets1 ;
-    if (path == "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
+    if (path == "https://kanguyn.github.io/Visualizing-Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
         newNumBuckets1 = 9;
     } else {
         newNumBuckets1 = numBuckets/2;
@@ -99,7 +99,7 @@ function makeHist_egs(old_csvdata, col, var_svg_id, xlabel) {
 
 function updateHist_egs(csvdata, col, var_svg_id) {
     var newNumBuckets1 ;
-    if (path == "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
+    if (path == "https://kanguyn.github.io/Visualizing-Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
         newNumBuckets1 = 9;
     } else {
         newNumBuckets1 = numBuckets/2;
@@ -274,7 +274,7 @@ function makeHist_mms(old_csvdata, col, var_svg_id, xlabel) {
     yScale_mms = d3.scaleLinear()
     .range([height2, 0]);
 
-    if (path == "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
+    if (path == "https://kanguyn.github.io/Visualizing-Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
         var newBucketSize = 16   ;
         var newNumBuckets = Math.round( 200 / newBucketSize);
         
@@ -342,7 +342,7 @@ function makeHist_mms(old_csvdata, col, var_svg_id, xlabel) {
 };
 
 function updateHist_mms(csvdata, col, var_svg_id) {
-    if (path == "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
+    if (path == "https://kanguyn.github.io/Visualizing-Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
         var newBucketSize = 16  ;
         var newNumBuckets = Math.round( 200 / newBucketSize);
         
@@ -538,7 +538,7 @@ function makeHist_votes(old_csvdata, col, var_svg_id, xlabel) {
     yScale_p_votes = d3.scaleLinear()
     .range([height1, 0]);
 
-    if (path == "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
+    if (path == "https://kanguyn.github.io/Visualizing-Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
         var newBucketSize = 8;
         var newNumBuckets = Math.round( 200 / newBucketSize);
         
@@ -611,7 +611,7 @@ function makeHist_votes(old_csvdata, col, var_svg_id, xlabel) {
 
 
 function updateHist_votes(csvdata, col, var_svg_id) {
-    if (path == "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
+    if (path == "https://kanguyn.github.io/Visualizing-Gerrymandering/data/PA_data/plan_metrics_PA_PRES16.csv"){
         var newBucketSize = 8;
         var newNumBuckets = Math.round( 200 / newBucketSize);
         

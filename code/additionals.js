@@ -21,7 +21,7 @@ var dataLoaded = function(error,_mapData,_filterData){
     var filterData = _filterData;
     fv = new Range('#Range',mapData, filterData);
 };
-var path = path = "https://github.mit.edu/pages/6894-sp19/Visualizing_Gerrymandering/data/VA_data/plan_metrics_ATG17.csv";
+var path = path = "https://kanguyn.github.io/Visualizing-Gerrymandering/data/VA_data/plan_metrics_ATG17.csv";
 var startHere = function(path){
     var q = d3.queue();
     q.defer(d3.csv, path)
