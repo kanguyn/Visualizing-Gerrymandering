@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img{
+            height: 25%;
+            width: 25%;
+        }
+    </style>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="code/wu_style.css">
+  <title>Visualizing Gerrymandering - design rationale</title>
+</head>
+
+<body>
+            
+<h4 class="wu"><font size = 5>Supplemental - Exploratory Data Analysis</font></h4><br>
+    <p>See below for some earlier iterations of static visualizations done in Python matplotlib for exploration and data analysis purpose, with some insights we’ve learned from studying them:</p>
+
+    <figure><img src="images/distribution_egs.png" class="sk" alt="Sketch1"/><figcaption>Efficiency Gap</figcaption></figure>
+    <figure><img src="images/distribution_hmss.png" class="sk" alt="Sketch2"/><figcaption>Democratic Seats</figcaption></figure>
+    <figure><img src="images/distribution_mms.png" class="sk" alt="Sketch3"/><figcaption>Mean Median</figcaption></figure>
+    <figure><img src="images/distribution_nb_cuts.png" class="sk" alt="Sketch4"/><figcaption>Number of Cuts</figcaption></figure>
+    <figure><img src="images/distribution_nb_splits.png" class="sk" alt="Sketch5"/><figcaption>NUmber of Splits</figcaption></figure>
+    <figure><img src="images/distribution_perc_dem_votes.png" class="sk" alt="Sketch6"/><figcaption>Democratic Percentage Vote</figcaption></figure>
+
+    <p>Insight: efficiency gap is really just share of democratic seats +/- some noise (not a very good metric at all - none of them are!).
+
+    Insight: Mean median score is uniformly distributed across plans.
+    </p>
+
+    <figure><img src="images/against_egs_mms.png" class="sk" alt="Sketch7"/><figcaption>Efficiency Gap-Mean Median</figcaption></figure>
+    <p> Insight: The above graph shows about the correlation on distribution for efficiency gap and mean-median distribution. The smaller the absolute values of the gap, the larger the range for mean-median distribution, with tail towards left. Also, most observations lies in between reasonable efficiency gaps, with mean-median distribution (double exponential distribution) centered around 0.</p>
+
+    <figure><img src="images/against_egs_hmss.png" class="sk" alt="Sketch8"/><figcaption>Efficiency Gap-Democratic Seats</figcaption></figure>
+    <o>The above graph shows the interaction of distribution between efficient gap and the number of seats won by democrat party. The most even distribution (with close to 0 efficiency gap) lies with 6 seats taken by the democrats, and the larger difference on efficiency gap will result in 7 seats taken by the democrats. <p>
+
+
+    <figure><img src="images/against_hmss_mms.png" class="sk" alt="Sketch9"/><figcaption>Democratic Seats-Mean Median</figcaption></figure>
+    <p>The smaller the number of seats taken by democrats, the larger the difference in mean-median distribution (for a number of more than 6 seats). What would be a good interpretation of such correlation? Shows that mean median is not a good indicator of # seats. The mean median left tail is a quite VA-specific thing.</p>
+
+    <figure><img src="images/against_egs_perc_votes.png" class="sk" alt="Sketch10"/><figcaption>Efficiency Gap-Vote Percentage</figcaption></figure>
+    <p>When plotting the distribution of efficiency gaps against the distribution democratic vote shares, it is interesting to see the positive slope between those 2 metrics. Thus, as Democrats increase their vote share, the efficiency gap tends to suggest more of a Democratic advantage.
+    </p>
+    
+    <figure><img src="images/against_cuts_egs.png" class="sk" alt="Sketch11"/><figcaption>Efficiency Gap-Cuts</figcaption></figure>
+    <p>Contrary to popular belief, this one shows that it is not necessarily true that fewer cuts mean better efficiency gap!
+    </p>
+    <figure><img src="images/added.png" class="sk" alt="Sketch12"/></figure>
+    <p>On average, Virginia is a “naturally” democratic state. The histogram shows the distribution of the ratio (#Dem seats / #Rep seats) across plans. It confirms that that ratio is more than 1 in most cases.</p>
+    <br>
+
+  
+</body>
+
+</html>
